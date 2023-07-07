@@ -1,6 +1,6 @@
 public class CodeChallenge {
     public static void main(String[] args) {
-        String str = "hello. HOw are you? i'm fine, thank you.";
+        String str = "banana";
 
         // stringInversion(str);
         // removeDuplicates(str);
@@ -39,6 +39,15 @@ public class CodeChallenge {
         char[] letters = str.toCharArray();
 
         String strPS = "";
+        
+        for (int mainCounter = 0; mainCounter <= str.length(); mainCounter++) {
+            for (int secundaryCounter = mainCounter+1; secundaryCounter <= str.length(); secundaryCounter++) {
+                String substringTest = str.substring(mainCounter, secundaryCounter);
+                if (isPalindrome(substringTest) == true && substringTest.length() >= strPS.length()) {
+                    strPS = substringTest.trim();
+                }
+            }
+        }
 
         System.out.println(strPS.trim());
         return strPS.trim();
