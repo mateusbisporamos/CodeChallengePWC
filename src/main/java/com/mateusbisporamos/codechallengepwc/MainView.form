@@ -4,14 +4,17 @@
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="title" type="java.lang.String" value="Desafio de C&#xf3;digo PWC"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="d" green="d" red="d" type="rgb"/>
+    </Property>
     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
       <Font name="Tw Cen MT" size="14" style="0"/>
     </Property>
     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[500, 700]"/>
+      <Dimension value="[500, 750]"/>
     </Property>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[500, 700]"/>
+      <Dimension value="[500, 750]"/>
     </Property>
     <Property name="name" type="java.lang.String" value="Desafio de C&#xf3;digo PWC" noResource="true"/>
     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -41,24 +44,17 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="Header" alignment="1" min="-2" max="-2" attributes="0"/>
-          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Component id="Main" alignment="0" max="32767" attributes="0"/>
-          </Group>
+          <Component id="Header" max="32767" attributes="0"/>
+          <Component id="Main" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="Header" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="420" max="-2" attributes="0"/>
-          </Group>
-          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
-                  <Component id="Main" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
-              </Group>
+              <Component id="Header" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="Main" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -68,6 +64,11 @@
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="29" green="ac" red="f2" type="rgb"/>
+        </Property>
+        <Property name="alignmentY" type="float" value="0.0"/>
+        <Property name="autoscrolls" type="boolean" value="true"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Default Cursor"/>
         </Property>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[500, 80]"/>
@@ -90,7 +91,7 @@
                   <Component id="logo" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="subtitle" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -164,24 +165,24 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="51" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="Challenge2" min="-2" max="-2" attributes="0"/>
-                      <Component id="Challenge1" min="-2" pref="400" max="-2" attributes="0"/>
+                      <Component id="Challenge1" min="-2" max="-2" attributes="0"/>
                       <Component id="Challenge3" min="-2" max="-2" attributes="0"/>
                       <Component id="Challenge4" min="-2" max="-2" attributes="0"/>
                       <Component id="Challenge5" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                  <EmptySpace pref="48" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                  <Component id="Challenge1" min="-2" pref="111" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                  <Component id="Challenge1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="Challenge2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -190,7 +191,7 @@
                   <Component id="Challenge4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="Challenge5" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="152" max="32767" attributes="0"/>
+                  <EmptySpace pref="46" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -202,13 +203,13 @@
               <Color blue="29" green="ac" red="f2" type="rgb"/>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[370, 32767]"/>
+              <Dimension value="[400, 110]"/>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[370, 100]"/>
+              <Dimension value="[400, 110]"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[370, 100]"/>
+              <Dimension value="[400, 110]"/>
             </Property>
           </Properties>
 
@@ -229,7 +230,7 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="texf_input_c1" max="32767" attributes="0"/>
+                                  <Component id="txf_input_c1" max="32767" attributes="0"/>
                                   <Component id="txf_output_c1" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
@@ -247,14 +248,14 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lab_input_c1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="texf_input_c1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txf_input_c1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lab_output_c1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txf_output_c1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="13" max="32767" attributes="0"/>
+                      <EmptySpace pref="12" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -269,7 +270,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="d" green="d" red="d" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="1. Reverta a ordem das palavras nas frases , mantendo a ordem das palavras:"/>
+                <Property name="text" type="java.lang.String" value="1. Reverta a ordem das palavras nas frases, mantendo a ordem das palavras:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lab_input_c1">
@@ -280,9 +281,10 @@
                 <Property name="text" type="java.lang.String" value="input:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="texf_input_c1">
+            <Component class="javax.swing.JTextField" name="txf_input_c1">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="texf_input_c1ActionPerformed"/>
+                <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txf_input_c1KeyPressed"/>
+                <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txf_input_c1KeyReleased"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="lab_output_c1">
@@ -294,6 +296,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txf_output_c1">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -303,10 +308,13 @@
               <Color blue="29" green="ac" red="f2" type="rgb"/>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[370, 32767]"/>
+              <Dimension value="[400, 90]"/>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[370, 100]"/>
+              <Dimension value="[400, 90]"/>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[400, 90]"/>
             </Property>
           </Properties>
 
@@ -327,7 +335,7 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="texf_input_c2" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txf_input_c2" alignment="0" max="32767" attributes="0"/>
                                   <Component id="txf_output_c2" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
@@ -345,14 +353,14 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lab_input_c2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="texf_input_c2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txf_input_c2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lab_output_c2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txf_output_c2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="8" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -378,9 +386,9 @@
                 <Property name="text" type="java.lang.String" value="input:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="texf_input_c2">
+            <Component class="javax.swing.JTextField" name="txf_input_c2">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="texf_input_c2ActionPerformed"/>
+                <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txf_input_c2KeyReleased"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="lab_output_c2">
@@ -392,6 +400,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txf_output_c2">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -401,10 +412,13 @@
               <Color blue="29" green="ac" red="f2" type="rgb"/>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[370, 32767]"/>
+              <Dimension value="[400, 90]"/>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[370, 100]"/>
+              <Dimension value="[400, 90]"/>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[400, 90]"/>
             </Property>
           </Properties>
 
@@ -425,7 +439,7 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="texf_input_c3" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txf_input_c3" alignment="0" max="32767" attributes="0"/>
                                   <Component id="txf_output_c3" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
@@ -443,14 +457,14 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lab_input_c3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="texf_input_c3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txf_input_c3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lab_output_c3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txf_output_c3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="8" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -476,9 +490,9 @@
                 <Property name="text" type="java.lang.String" value="input:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="texf_input_c3">
+            <Component class="javax.swing.JTextField" name="txf_input_c3">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="texf_input_c3ActionPerformed"/>
+                <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txf_input_c3KeyReleased"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="lab_output_c3">
@@ -490,6 +504,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txf_output_c3">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -499,10 +516,13 @@
               <Color blue="29" green="ac" red="f2" type="rgb"/>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[370, 32767]"/>
+              <Dimension value="[400, 90]"/>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[370, 100]"/>
+              <Dimension value="[400, 90]"/>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[400, 90]"/>
             </Property>
           </Properties>
 
@@ -523,7 +543,7 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="texf_input_c4" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txf_input_c4" alignment="0" max="32767" attributes="0"/>
                                   <Component id="txf_output_c4" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
@@ -541,14 +561,14 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lab_input_c4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="texf_input_c4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txf_input_c4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lab_output_c4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txf_output_c4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="8" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -574,9 +594,9 @@
                 <Property name="text" type="java.lang.String" value="input:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="texf_input_c4">
+            <Component class="javax.swing.JTextField" name="txf_input_c4">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="texf_input_c4ActionPerformed"/>
+                <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txf_input_c4KeyReleased"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="lab_output_c4">
@@ -588,6 +608,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txf_output_c4">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -597,10 +620,13 @@
               <Color blue="29" green="ac" red="f2" type="rgb"/>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[370, 32767]"/>
+              <Dimension value="[400, 90]"/>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[370, 100]"/>
+              <Dimension value="[400, 90]"/>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[400, 90]"/>
             </Property>
           </Properties>
 
@@ -621,7 +647,7 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="texf_input_c5" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txf_input_c5" alignment="0" max="32767" attributes="0"/>
                                   <Component id="txf_output_c5" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
@@ -639,14 +665,14 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lab_input_c5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="texf_input_c5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txf_input_c5" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lab_output_c5" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txf_output_c5" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="8" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -672,9 +698,9 @@
                 <Property name="text" type="java.lang.String" value="input:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="texf_input_c5">
+            <Component class="javax.swing.JTextField" name="txf_input_c5">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="texf_input_c5ActionPerformed"/>
+                <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txf_input_c5KeyReleased"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="lab_output_c5">
@@ -686,9 +712,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txf_output_c5">
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txf_output_c5ActionPerformed"/>
-              </Events>
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>

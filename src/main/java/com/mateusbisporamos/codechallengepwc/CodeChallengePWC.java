@@ -2,15 +2,7 @@ package com.mateusbisporamos.codechallengepwc;
 
 public class CodeChallengePWC {
 
-    public static void main(String[] args) {
-        String str = "banana";
-
-        // System.out.println(stringInversion(str));
-        // System.out.println(removeDuplicates(str));
-        // System.out.println(palindromeSubstring(str));
-        // System.out.println(upperCase(str));
-        // System.out.println(isPalindrome(str));
-    }
+    public static void main(String[] args) {}
     
 
     public static String stringInversion(String str) {
@@ -38,15 +30,18 @@ public class CodeChallengePWC {
     }
 
     public static String palindromeSubstring(String str) {
-        char[] letters = str.toCharArray();
-
         String strPS = "";
         
         for (int mainCounter = 0; mainCounter <= str.length(); mainCounter++) {
             for (int secundaryCounter = mainCounter+1; secundaryCounter <= str.length(); secundaryCounter++) {
                 String substringTest = str.substring(mainCounter, secundaryCounter);
                 if (isPalindrome(substringTest) == true && substringTest.length() >= strPS.length()) {
-                    strPS = substringTest.trim();
+                    if (substringTest.trim().length() >= 2){
+                        strPS = substringTest;
+                    } else {
+                        strPS = "-";
+                    }
+                    
                 }
             }
         }
