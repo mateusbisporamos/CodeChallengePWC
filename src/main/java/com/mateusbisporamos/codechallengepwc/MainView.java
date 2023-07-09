@@ -279,6 +279,8 @@ public class MainView extends javax.swing.JFrame {
         lab_input_c3.setText("input:");
 
         txf_input_c3.setForeground(new java.awt.Color(255, 255, 255));
+        txf_input_c3.setCaretColor(new java.awt.Color(255, 255, 255));
+        txf_input_c3.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         txf_input_c3.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txf_input_c3KeyReleased(evt);
@@ -342,6 +344,8 @@ public class MainView extends javax.swing.JFrame {
         lab_input_c4.setText("input:");
 
         txf_input_c4.setForeground(new java.awt.Color(255, 255, 255));
+        txf_input_c4.setCaretColor(new java.awt.Color(255, 255, 255));
+        txf_input_c4.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         txf_input_c4.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txf_input_c4KeyReleased(evt);
@@ -405,6 +409,8 @@ public class MainView extends javax.swing.JFrame {
         lab_input_c5.setText("input:");
 
         txf_input_c5.setForeground(new java.awt.Color(255, 255, 255));
+        txf_input_c5.setCaretColor(new java.awt.Color(255, 255, 255));
+        txf_input_c5.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         txf_input_c5.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txf_input_c5KeyReleased(evt);

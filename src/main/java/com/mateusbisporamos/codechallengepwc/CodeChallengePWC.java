@@ -51,13 +51,16 @@ public class CodeChallengePWC {
                 // gera uma substrig que se incia no contador do primeiro loop e acaba no contador do segundo loop dessa forma todas as substrings possíveis são geradas
                 String substringTest = str.substring(mainCounter, secundaryCounter);
                 
-                // testa se a substring gerada é um palindromo, se o seu tamanho é maior ou igual ao tamanho da string a ser retornada e se o seu tamanho é maior ou igual a dois
-                if (isPalindrome(substringTest) == true && substringTest.length() >= strPS.length() && substringTest.trim().length() >= 2) {
-                    // insere a substring na string a ser retornada
-                    strPS = substringTest;
-                } else {
-                    // insere um "-" indicando que nenhum palindromo foi encontrado
-                    strPS = "-";
+                // testa se a substring gerada é um palindromo e se o seu tamanho é maior ou igual ao tamanho da string a ser retornada
+                if (isPalindrome(substringTest) == true && substringTest.length() >= strPS.length()) {
+                    // testa se a string tem pelo menos dois caracteres
+                    if (substringTest.trim().length() >= 2){
+                        // se sim, insere a substring na string a ser retornada
+                        strPS = substringTest;
+                    } else {
+                        // se não, insere um "-" indicando que nenhum palindromo foi encontrado
+                        strPS = "-";
+                    }
                 }
             }
         }
@@ -68,7 +71,7 @@ public class CodeChallengePWC {
 
     // método responsável por colocar em maiúscula a primeira letra das frases de uma string
     public static String upperCase(String str) {
-        // array que armazena as frases da string usando o método split
+        // array que armazena as frases da string usando o método split e as coloca em minúsculas
         String strArray[] = str.trim().toLowerCase().split("(?<=[!?.:])");
 
         // string a ser retornada
@@ -76,28 +79,42 @@ public class CodeChallengePWC {
 
         // loop pelas frases armazenadas no array
         for (String sentence : strArray) {
+            // array que armazena os caracteres da frase
             char[] sentenceLetters = sentence.toCharArray();
+            // boleano para indicar se a primeira letra da frase está em maiúscula
             boolean fisrtLetter = false;
+            // loop pelo array que armazena os caracteres da frase
             for (char letter : sentenceLetters) {
+                // testa se o caractere é uma letra e se o boleano está com o valor false
                 if (Character.isLetter(letter) && fisrtLetter == false) {    
+                    // se sim insere o caractere em maiúscula na string a ser retornada
                     strUpperCase += Character.toString(letter).toUpperCase();
+                    // muda o valor do boleano de false para true
                     fisrtLetter = true;
                 } else{
+                    // se não, insere o caractere normalmente na string a ser retornada
                     strUpperCase += Character.toString(letter);
                 }
             }
         }
 
+        // retorna a string com a primeira letra de cada frase em maiúscula
         return strUpperCase;
     }
 
+    // método responsável por verificar se uma string é um palindromo
     public static boolean isPalindrome(String str) {
+        // iniciação da classe para manipulação de strings
         StringBuilder sb = new StringBuilder(str);
+        // inversão da string
         String strInversion = sb.reverse().toString();
 
+        // testa se a string invertida tem pelo menos 2 caracteres e se ela é igual a string original
         if (str.equals(strInversion)) {
+            // se sim retorna true
             return true;
         } else {
+            // se não retorna false
             return false;
         }
 
