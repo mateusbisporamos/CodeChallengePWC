@@ -1,13 +1,17 @@
-public class CodeChallenge {
+package com.mateusbisporamos.codechallengepwc;
+
+public class CodeChallengePWC {
+
     public static void main(String[] args) {
         String str = "banana";
 
-        // stringInversion(str);
-        // removeDuplicates(str);
-        palindromeSubstring(str);
-        // upperCase(str);
-        // isPalindrome(str);
+        // System.out.println(stringInversion(str));
+        // System.out.println(removeDuplicates(str));
+        // System.out.println(palindromeSubstring(str));
+        // System.out.println(upperCase(str));
+        // System.out.println(isPalindrome(str));
     }
+    
 
     public static String stringInversion(String str) {
         String[] words = str.trim().split("\\s+");
@@ -17,7 +21,6 @@ public class CodeChallenge {
         for (int counter = words.length - 1; counter >= 0; counter--)
             strInversion += words[counter] + " ";
 
-        System.out.println(strInversion.trim());
         return strInversion.trim();
     }
 
@@ -31,7 +34,6 @@ public class CodeChallenge {
                 strDuplicates += c;
         }
 
-        System.out.println(strDuplicates.trim());
         return strDuplicates.trim();
     }
 
@@ -49,7 +51,6 @@ public class CodeChallenge {
             }
         }
 
-        System.out.println(strPS.trim());
         return strPS.trim();
     }
 
@@ -71,7 +72,6 @@ public class CodeChallenge {
             }
         }
 
-        System.out.println(strUpperCase);
         return strUpperCase;
     }
 
@@ -79,13 +79,9 @@ public class CodeChallenge {
         StringBuilder sb = new StringBuilder(str);
         String strInversion = sb.reverse().toString();
 
-        System.out.println(strInversion);
-
         if (str.equals(strInversion)) {
-            System.out.println(true);
             return true;
         } else {
-            System.out.println(false);
             return false;
         }
 
