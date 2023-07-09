@@ -1,11 +1,26 @@
 package com.mateusbisporamos.codechallengepwc;
 
-import com.mateusbisporamos.codechallengepwc.CodeChallengePWC;
+import com.mateusbisporamos.codechallengepwc.CodeChallengePWC; // import dos métodos
+import java.awt.Color;
 
 public class MainView extends javax.swing.JFrame {
     
     public MainView() {
         initComponents();
+        
+        getContentPane().setBackground(new Color(13, 13, 13));
+        
+        txf_input_c1.setBackground(new Color(13, 13, 13));
+        txf_input_c2.setBackground(new Color(13, 13, 13));
+        txf_input_c3.setBackground(new Color(13, 13, 13));
+        txf_input_c4.setBackground(new Color(13, 13, 13));
+        txf_input_c5.setBackground(new Color(13, 13, 13));
+        
+        txf_output_c1.setBackground(new Color(13, 13, 13));
+        txf_output_c2.setBackground(new Color(13, 13, 13));
+        txf_output_c3.setBackground(new Color(13, 13, 13));
+        txf_output_c4.setBackground(new Color(13, 13, 13));
+        txf_output_c5.setBackground(new Color(13, 13, 13));
     }
     
     @SuppressWarnings("unchecked")
@@ -13,10 +28,9 @@ public class MainView extends javax.swing.JFrame {
     private void initComponents() {
 
         Header = new javax.swing.JPanel();
-        logo = new javax.swing.JLabel();
-        subtitle = new javax.swing.JLabel();
         title = new javax.swing.JLabel();
-        Main = new javax.swing.JPanel();
+        subtitle = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         Challenge1 = new javax.swing.JPanel();
         title_c1 = new javax.swing.JTextPane();
         lab_input_c1 = new javax.swing.JLabel();
@@ -52,10 +66,11 @@ public class MainView extends javax.swing.JFrame {
         setTitle("Desafio de Código PWC");
         setBackground(new java.awt.Color(13, 13, 13));
         setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-        setMaximumSize(new java.awt.Dimension(500, 750));
-        setMinimumSize(new java.awt.Dimension(500, 750));
+        setForeground(new java.awt.Color(13, 13, 13));
+        setMaximumSize(new java.awt.Dimension(500, 600));
+        setMinimumSize(new java.awt.Dimension(500, 600));
         setName("Desafio de Código PWC"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(0, 0));
+        setPreferredSize(new java.awt.Dimension(500, 600));
         setResizable(false);
         setSize(new java.awt.Dimension(0, 0));
 
@@ -67,7 +82,13 @@ public class MainView extends javax.swing.JFrame {
         Header.setMinimumSize(new java.awt.Dimension(500, 80));
         Header.setPreferredSize(new java.awt.Dimension(500, 80));
 
-        logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\nirem\\OneDrive\\Área de Trabalho\\projects\\CodeChallengePWC\\src\\main\\res\\images\\pwc_logo.png")); // NOI18N
+        title.setBackground(new java.awt.Color(0, 0, 0));
+        title.setFont(new java.awt.Font("Century Gothic", 3, 14)); // NOI18N
+        title.setForeground(new java.awt.Color(13, 13, 13));
+        title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        title.setText("Desafio de Código ");
+        title.setToolTipText("");
+        title.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
         subtitle.setBackground(new java.awt.Color(0, 0, 0));
         subtitle.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
@@ -77,58 +98,55 @@ public class MainView extends javax.swing.JFrame {
         subtitle.setAlignmentY(0.3F);
         subtitle.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        title.setBackground(new java.awt.Color(0, 0, 0));
-        title.setFont(new java.awt.Font("Century Gothic", 3, 14)); // NOI18N
-        title.setForeground(new java.awt.Color(13, 13, 13));
-        title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        title.setText("Desafio de Código ");
-        title.setToolTipText("");
-        title.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nirem\\OneDrive\\Área de Trabalho\\projects\\CodeChallengePWC\\src\\main\\res\\images\\pwc_logo.png")); // NOI18N
 
         javax.swing.GroupLayout HeaderLayout = new javax.swing.GroupLayout(Header);
         Header.setLayout(HeaderLayout);
         HeaderLayout.setHorizontalGroup(
             HeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(HeaderLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
+                .addGap(21, 21, 21)
                 .addComponent(title)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(logo)
+                .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(subtitle)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         HeaderLayout.setVerticalGroup(
             HeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(HeaderLayout.createSequentialGroup()
-                .addGap(28, 28, 28)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HeaderLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
                 .addGroup(HeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(subtitle, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(HeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(title)
-                        .addComponent(logo)))
-                .addContainerGap(24, Short.MAX_VALUE))
+                    .addComponent(title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(37, 37, 37))
+            .addGroup(HeaderLayout.createSequentialGroup()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        Main.setBackground(new java.awt.Color(13, 13, 13));
-
         Challenge1.setBackground(new java.awt.Color(242, 172, 41));
-        Challenge1.setMaximumSize(new java.awt.Dimension(400, 110));
-        Challenge1.setMinimumSize(new java.awt.Dimension(400, 110));
-        Challenge1.setPreferredSize(new java.awt.Dimension(400, 110));
+        Challenge1.setMaximumSize(new java.awt.Dimension(400, 90));
+        Challenge1.setMinimumSize(new java.awt.Dimension(400, 90));
+        Challenge1.setPreferredSize(new java.awt.Dimension(400, 90));
 
         title_c1.setEditable(false);
         title_c1.setBackground(new java.awt.Color(242, 172, 41));
+        title_c1.setBorder(null);
         title_c1.setForeground(new java.awt.Color(13, 13, 13));
         title_c1.setText("1. Reverta a ordem das palavras nas frases, mantendo a ordem das palavras:");
+        title_c1.setCaretColor(new java.awt.Color(242, 172, 41));
+        title_c1.setDisabledTextColor(new java.awt.Color(242, 172, 41));
 
         lab_input_c1.setForeground(new java.awt.Color(13, 13, 13));
         lab_input_c1.setText("input:");
 
+        txf_input_c1.setForeground(new java.awt.Color(255, 255, 255));
+        txf_input_c1.setCaretColor(new java.awt.Color(255, 255, 255));
+        txf_input_c1.setDisabledTextColor(new java.awt.Color(70, 73, 75));
+        txf_input_c1.setSelectedTextColor(new java.awt.Color(255, 255, 255));
         txf_input_c1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                txf_input_c1KeyPressed(evt);
-            }
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txf_input_c1KeyReleased(evt);
             }
@@ -138,6 +156,10 @@ public class MainView extends javax.swing.JFrame {
         lab_output_c1.setText("output:");
 
         txf_output_c1.setEditable(false);
+        txf_output_c1.setForeground(new java.awt.Color(255, 255, 255));
+        txf_output_c1.setCaretColor(new java.awt.Color(255, 255, 255));
+        txf_output_c1.setDisabledTextColor(new java.awt.Color(255, 255, 255));
+        txf_output_c1.setSelectedTextColor(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout Challenge1Layout = new javax.swing.GroupLayout(Challenge1);
         Challenge1.setLayout(Challenge1Layout);
@@ -173,7 +195,7 @@ public class MainView extends javax.swing.JFrame {
                 .addGroup(Challenge1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lab_output_c1)
                     .addComponent(txf_output_c1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         Challenge2.setBackground(new java.awt.Color(242, 172, 41));
@@ -189,6 +211,9 @@ public class MainView extends javax.swing.JFrame {
         lab_input_c2.setForeground(new java.awt.Color(13, 13, 13));
         lab_input_c2.setText("input:");
 
+        txf_input_c2.setForeground(new java.awt.Color(255, 255, 255));
+        txf_input_c2.setCaretColor(new java.awt.Color(255, 255, 255));
+        txf_input_c2.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         txf_input_c2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txf_input_c2KeyReleased(evt);
@@ -199,6 +224,9 @@ public class MainView extends javax.swing.JFrame {
         lab_output_c2.setText("output:");
 
         txf_output_c2.setEditable(false);
+        txf_output_c2.setForeground(new java.awt.Color(255, 255, 255));
+        txf_output_c2.setCaretColor(new java.awt.Color(255, 255, 255));
+        txf_output_c2.setDisabledTextColor(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout Challenge2Layout = new javax.swing.GroupLayout(Challenge2);
         Challenge2.setLayout(Challenge2Layout);
@@ -250,6 +278,7 @@ public class MainView extends javax.swing.JFrame {
         lab_input_c3.setForeground(new java.awt.Color(13, 13, 13));
         lab_input_c3.setText("input:");
 
+        txf_input_c3.setForeground(new java.awt.Color(255, 255, 255));
         txf_input_c3.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txf_input_c3KeyReleased(evt);
@@ -260,6 +289,7 @@ public class MainView extends javax.swing.JFrame {
         lab_output_c3.setText("output:");
 
         txf_output_c3.setEditable(false);
+        txf_output_c3.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout Challenge3Layout = new javax.swing.GroupLayout(Challenge3);
         Challenge3.setLayout(Challenge3Layout);
@@ -311,6 +341,7 @@ public class MainView extends javax.swing.JFrame {
         lab_input_c4.setForeground(new java.awt.Color(13, 13, 13));
         lab_input_c4.setText("input:");
 
+        txf_input_c4.setForeground(new java.awt.Color(255, 255, 255));
         txf_input_c4.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txf_input_c4KeyReleased(evt);
@@ -321,6 +352,7 @@ public class MainView extends javax.swing.JFrame {
         lab_output_c4.setText("output:");
 
         txf_output_c4.setEditable(false);
+        txf_output_c4.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout Challenge4Layout = new javax.swing.GroupLayout(Challenge4);
         Challenge4.setLayout(Challenge4Layout);
@@ -372,6 +404,7 @@ public class MainView extends javax.swing.JFrame {
         lab_input_c5.setForeground(new java.awt.Color(13, 13, 13));
         lab_input_c5.setText("input:");
 
+        txf_input_c5.setForeground(new java.awt.Color(255, 255, 255));
         txf_input_c5.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txf_input_c5KeyReleased(evt);
@@ -382,6 +415,7 @@ public class MainView extends javax.swing.JFrame {
         lab_output_c5.setText("output:");
 
         txf_output_c5.setEditable(false);
+        txf_output_c5.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout Challenge5Layout = new javax.swing.GroupLayout(Challenge5);
         Challenge5.setLayout(Challenge5Layout);
@@ -420,24 +454,26 @@ public class MainView extends javax.swing.JFrame {
                 .addContainerGap(8, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout MainLayout = new javax.swing.GroupLayout(Main);
-        Main.setLayout(MainLayout);
-        MainLayout.setHorizontalGroup(
-            MainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(MainLayout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addGroup(MainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Header, javax.swing.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Challenge2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Challenge1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Challenge3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Challenge4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Challenge5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
-        MainLayout.setVerticalGroup(
-            MainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(MainLayout.createSequentialGroup()
-                .addGap(19, 19, 19)
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(Header, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Challenge1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Challenge2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -447,55 +483,40 @@ public class MainView extends javax.swing.JFrame {
                 .addComponent(Challenge4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Challenge5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(46, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Main, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(Header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Main, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txf_input_c1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txf_input_c1KeyPressed
-        
-    }//GEN-LAST:event_txf_input_c1KeyPressed
-
+    // método executado ao digitar no input do desafio 1
     private void txf_input_c1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txf_input_c1KeyReleased
-        String str = txf_input_c1.getText();
-        txf_output_c1.setText(CodeChallengePWC.stringInversion(str));
+        String str = txf_input_c1.getText(); // aramazena o texto do input na variável
+        txf_output_c1.setText(CodeChallengePWC.stringInversion(str)); // insere o retorno da função no oputput
     }//GEN-LAST:event_txf_input_c1KeyReleased
 
+    // método executado ao digitar no input do desafio 2
     private void txf_input_c2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txf_input_c2KeyReleased
-        String str = txf_input_c2.getText();
-        txf_output_c2.setText(CodeChallengePWC.removeDuplicates(str));
+        String str = txf_input_c2.getText(); // aramazena o texto do input na variável
+        txf_output_c2.setText(CodeChallengePWC.removeDuplicates(str)); // insere o retorno da função no oputput
     }//GEN-LAST:event_txf_input_c2KeyReleased
 
+    // método executado ao digitar no input do desafio 3
     private void txf_input_c3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txf_input_c3KeyReleased
-        String str = txf_input_c3.getText();
-        txf_output_c3.setText(CodeChallengePWC.palindromeSubstring(str));
+        String str = txf_input_c3.getText(); // aramazena o texto do input na variável
+        txf_output_c3.setText(CodeChallengePWC.palindromeSubstring(str)); // insere o retorno da função no oputput
     }//GEN-LAST:event_txf_input_c3KeyReleased
 
+    // método executado ao digitar no input do desafio 4
     private void txf_input_c4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txf_input_c4KeyReleased
-        String str = txf_input_c4.getText();
-        txf_output_c4.setText(CodeChallengePWC.upperCase(str));
+        String str = txf_input_c4.getText(); // aramazena o texto do input na variável
+        txf_output_c4.setText(CodeChallengePWC.upperCase(str)); // insere o retorno da função no oputput
     }//GEN-LAST:event_txf_input_c4KeyReleased
 
+    // método executado ao digitar no input do desafio 5
     private void txf_input_c5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txf_input_c5KeyReleased
-        String str = txf_input_c5.getText();
-        txf_output_c5.setText(Boolean.toString(CodeChallengePWC.isPalindrome(str)));
+        String str = txf_input_c5.getText(); // aramazena o texto do input na variável
+        txf_output_c5.setText(Boolean.toString(CodeChallengePWC.isPalindrome(str))); // insere o retorno da função no oputput
     }//GEN-LAST:event_txf_input_c5KeyReleased
 
     
@@ -503,7 +524,7 @@ public class MainView extends javax.swing.JFrame {
         
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -534,7 +555,7 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JPanel Challenge4;
     private javax.swing.JPanel Challenge5;
     private javax.swing.JPanel Header;
-    private javax.swing.JPanel Main;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lab_input_c1;
     private javax.swing.JLabel lab_input_c2;
     private javax.swing.JLabel lab_input_c3;
@@ -545,7 +566,6 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JLabel lab_output_c3;
     private javax.swing.JLabel lab_output_c4;
     private javax.swing.JLabel lab_output_c5;
-    private javax.swing.JLabel logo;
     private javax.swing.JLabel subtitle;
     private javax.swing.JLabel title;
     private javax.swing.JTextPane title_c1;
