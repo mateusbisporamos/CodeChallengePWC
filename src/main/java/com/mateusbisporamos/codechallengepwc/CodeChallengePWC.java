@@ -1,6 +1,12 @@
 package com.mateusbisporamos.codechallengepwc;
 
+import com.mateusbisporamos.codechallengepwc.MainView;
+
 public class CodeChallengePWC {
+    
+    public static void main(String args[]){
+        MainView.main(args);
+    }
     
     // método responsável por fazer a inversão das palavaras da string
     public static String stringInversion(String str) {
